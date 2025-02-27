@@ -8,8 +8,12 @@
 <body style="margin:0px">
    <div id="seadragon-viewer" style="width:100vw; height:100vh"></div>
    <script src="https://openseadragon.github.io/openseadragon/openseadragon.min.js"></script>
-   <script src="https://raw.githubusercontent.com/GeorgeTR1/View-Counter/refs/heads/main/counter.js"></script>
    <script>
+   var req = new XMLHttpRequest();
+   //URL is deployment of code here: https://github.com/GeorgeTR1/View-Counter/blob/main/main.js
+   req.open("POST", "https://georgetr1-view-counte-39.deno.dev/");
+   req.send(location.href);
+      
    var viewer = OpenSeadragon({
       id: "seadragon-viewer",
       prefixUrl: "https://openseadragon.github.io/openseadragon/images/",
