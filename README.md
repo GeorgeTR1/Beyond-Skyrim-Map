@@ -2,7 +2,7 @@ Note to self -
 
 1. Create a `.dzi` file with `vips`
 ```
-vips dzsave in.jpg dzi\out --suffix .png --tile-size 510
+vips dzsave in.jpg dzi\out --suffix .png --tile-size 510 --vips-progress
 ```
 2. Create and upload this to a new GitHub repository using `git`
 3. Deploy this new repository using GitHub pages and wait for it to finish (makes requests faster, though not strictly necessary)
