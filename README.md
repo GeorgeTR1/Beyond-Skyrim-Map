@@ -15,11 +15,11 @@ python copy2g.py dzi
 `cd` into the directory that was created (`dzi_out`), then
 ```
 git init
-git add . -v
 git remote add origin git@github.com:GeorgeTR1/BSMapData2025.git
 ```
-Then commit and push
+Then add, commit, and push
 ```
+git add . -v
 git commit -m "add files"
 git push origin master
 ```
