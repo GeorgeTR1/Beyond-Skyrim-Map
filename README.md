@@ -7,21 +7,23 @@ vips dzsave in.jpg dzi\out --suffix .png --tile-size 510 --vips-progress
 2. Create and upload this to a new GitHub repository using `git`.
 
 Create new repository like `BSMapData2025`
+
+Copy < 2GB of files
+```
+python copy2g.py dzi
+```
+`cd` into the directory that was created (`dzi_out`), then
 ```
 git init
 git add . -v
 git remote add origin git@github.com:GeorgeTR1/BSMapData2025.git
-```
-Copy < 2GB of files
-```
-python copy2g.py dzi
 ```
 Then commit and push
 ```
 git commit -m "add files"
 git push origin master
 ```
-Repeat until all files are uploaded.
+Re-run python command and then repeat until all files are uploaded.
 If it doesn't work, do
 ```
 gh auth login
