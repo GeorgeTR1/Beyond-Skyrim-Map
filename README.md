@@ -21,7 +21,7 @@ Then add, commit, and push
 ```
 git add . -v
 git commit -m "add files"
-git push origin master
+git push origin main
 ```
 Re-run python command and then repeat until all files are uploaded.
 If it doesn't work, do
@@ -32,7 +32,7 @@ Choose ssh. Then
 ```
 git remote remove origin
 git remote add origin git@github.com:GeorgeTR1/BSMapData2025.git
-git push origin master
+git push origin main
 ```
 3. Deploy this new repository using GitHub pages and wait for it to finish (makes requests faster, though not strictly necessary)
 4. Change the value of `tileSources` in `index.html` to the location of the new `.dzi` file, something like
